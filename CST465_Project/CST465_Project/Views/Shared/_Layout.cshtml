@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewBag.Title - Lab4: MVC</title>
+</head>
+<body>
+    <header>
+        @RenderSection("header", required: false)
+    </header>
+    @RenderBody()
+    <footer>
+        @RenderSection("footer", required: false)
+    </footer>
+</body>
+</html>

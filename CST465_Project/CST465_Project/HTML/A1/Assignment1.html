@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/CSS/A1/defaultStyles.css" />
+</head>
+<body>
+    <header>Assignment 1</header>
+    <h1 hidden>Assignment 1</h1>
+    <nav class="links">
+        <ul>
+            <li><a href="http://www.hanselman.com/blog/HowToReferenceAnExistingNETFrameworkProjectInAnASPNETCore10WebApp.aspx">Blog 1</a></li>
+            <li><a href="http://andrewlock.net/an-introduction-to-openid-connect-in-asp-net-core/">Blog 2</a></li>
+            <li><a href="https://channel9.msdn.com/Events/Ignite/2016/BRK3194">Blog 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>General Information</h2>
+        <section class="formOne">
+            <form method="post" action="http://www.oit.edu/cst465">
+                <label for="uxName">Name:</label><br />
+                <input type="text" name="name" id="uxName" /><br />
+                <label for="uxEmailAddress">Email Address:</label><br />
+                <input type="text" name="emailAddress" id="uxEmailAddress" /><br />
+                <label for="uxUserType">User Type:</label><br />
+                <select name="userType" id="uxUserType">
+                    <option value="student">Student</option>
+                    <option value="facultyStaff">Faculty/Staff</option>
+                </select><br />
+                <label for="uxHobby">Hobby:</label><br />
+                <input type="text" name="hobby" id="uxHobby" /><br />
+                <label for="uxBand">Band:</label><br />
+                <input type="text" name="band" id="uxBand" /><br />
+                <label for="uxBiography">Biography:</label><br />
+                <textarea name="biography" id="uxBiography"></textarea><br /><br /><br />
+                <table>
+                    <thead>
+                        <tr>
+                            <th name="coursePrefix" id="uxCoursePrefix">Course Prefix</th>
+                            <th name="courseNumber" id="uxCourseNumber">Course Number</th>
+                            <th name="courseDescription" id="uxCourseDescription">Course Description</th>
+                            <th input type="hidden" name="nickname" id="uxNickname">Nickname</th>
+                        </tr>
+                    </thead>
+                </table><br /><br /><br />
+                <input type="submit" name="submit" id="uxSubmit" value="Save Profile" />
+            </form>
+        </section>
+    </main>
+    <footer>Copyright 2015-2016 Something Inc.</footer>
+</body>
+</html>

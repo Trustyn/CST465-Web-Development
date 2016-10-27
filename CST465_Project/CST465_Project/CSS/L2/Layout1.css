@@ -1,0 +1,39 @@
+﻿html {
+    font-size: 16px;
+    font: serif;
+}
+body {
+}
+
+nav.links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.links ul li {
+    border: solid;
+    background: linear-gradient(to bottom, #CDCDCD, #FFFFFF); /*Grey80, White*/
+    border-radius: 5px;
+    padding: 5px;
+}
+footer {
+    clear: both;
+    background-color: #000000; /*Black*/
+    color: #FFFFFF; /*White*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+}
+@media screen and (min-width: 800px) {
+    nav {
+        width: 25%;
+        max-width: 300px;
+        float: left;
+    }
+    main {
+        width: 75%;
+        float: left;
+    }
+}
