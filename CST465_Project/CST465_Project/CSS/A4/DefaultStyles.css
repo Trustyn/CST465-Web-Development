@@ -1,0 +1,58 @@
+﻿/* Background: http://paletton.com/#uid=10q0u0kgf8q9si59t9Ql86MqA4D */
+/* Text: http://paletton.com/#uid=12Y0u0krhGUgyPym9KGBEDSCpqn */
+/* Nav: http://paletton.com/#uid=1000u0k004h0jin01bN5m02dm0p */
+html {
+    background-color: #362112;
+    /*This only here for A4, will remove because ugly.*/
+}
+
+body {
+    background-color: #432F21;
+    color: #1FD26A;
+    margin: auto;
+    max-width: 98%;
+}
+
+img {
+    max-width: 50%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    color: #00973D;
+}
+
+h2 {
+    color: #00CB52;
+}
+
+h3 {
+    color: #1FD267;
+}
+
+ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+li {
+    float: left
+}
+
+li a {
+    display: block;
+    color: #1FD26A;
+    text-align: center;
+    padding: 10px 12px 14px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #333333;
+    color: #1FD26A;
+}

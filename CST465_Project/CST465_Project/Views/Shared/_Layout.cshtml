@@ -1,13 +1,25 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>@ViewBag.Title - Lab4: MVC</title>
+    <link rel="stylesheet" type="text/css" href="~/CSS/A4/DefaultStyles.css" />
+    <title>@ViewBag.Title - VascularScrub</title>
 </head>
 <body>
     <header>
         @RenderSection("header", required: false)
     </header>
+    <img src="~/Images/VascularLogo_GreenSAFS.png" alt="MainLogo" />
     @RenderBody()
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Home", "/Index", "Home")</li>
+            <li>@Html.ActionLink("Contact", "/Index", "Contact")</li>
+            <li>@Html.ActionLink("About", "/Index", "About")</li>
+        </ul>
+    </nav>
+    @RenderSection("h1", required: true)
+    @RenderSection("h2", required: false)
+    @RenderSection("h3", required: false)
     <footer>
         @RenderSection("footer", required: false)
     </footer>
