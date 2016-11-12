@@ -120,6 +120,8 @@
     <Content Include="Views\Error\NotFound.cshtml" />
     <Content Include="Views\Error\ServerError.cshtml" />
     <Content Include="Views\Blog\Add.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

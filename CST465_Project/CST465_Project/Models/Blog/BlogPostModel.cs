@@ -22,5 +22,17 @@ namespace CST465_Project
         [Required]
         public string Author { get; set; }
 
+        public BlogPostModel(BlogPost bp)
+        {
+            ID = bp.ID;
+            Title = bp.Title;
+            Content = bp.Content;
+            Author = bp.Author;
+        }
+
+        public BlogPostModel()
+        {
+
+        }
     }
 }

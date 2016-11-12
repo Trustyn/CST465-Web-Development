@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CST465_Project.Controllers
+namespace CST465_Project
 {
     
     public class BlogController : Controller
@@ -43,14 +43,25 @@ namespace CST465_Project.Controllers
             return RedirectToAction("Index");
         }
 
-        //public ActionResult Edit(int id)
-        //{
+        
+        public ActionResult Edit(int id)
+        {
+            
+            return View(new BlogPostModel(_Repo.Get(id)));
+        }
 
-        //}
-
-        //public ActionResult Edit(BlogPostModel model)
-        //{
-
-        //}
+        [HttpPost]
+        public ActionResult Edit(BlogPostModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                BlogPost bp = _Repo.Get(model.ID);
+                bp.Title = model.Title;
+                bp.Content = model.Content;
+                bp.Author = model.Author;
+                _Repo.Save(bp);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
