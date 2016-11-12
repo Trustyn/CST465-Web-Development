@@ -18,7 +18,7 @@ namespace CST465_Project
 
         public ActionResult Index()
         {
-            List<BlogPost> posts = new List<BlogPost>();
+            List<BlogPost> posts = _Repo.GetList();
             return View(posts);
         }
         
