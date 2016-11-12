@@ -1,0 +1,14 @@
+﻿@model BlogPostModel
+
+@Html.LabelFor(bp => bp.Title)
+@Html.TextBoxFor(bp => bp.Title)<br />
+@Html.ValidationMessageFor(bp => bp.Title, "This field is required.")
+
+@Html.LabelFor(bp => bp.Author)
+@Html.TextBoxFor(bp => bp.Author)<br />
+@Html.ValidationMessageFor(bp => bp.Author, "This field is required.")
+
+@Html.LabelFor(bp => bp.Content)<br />
+@Html.TextAreaFor(bp => bp.Content)<br />
+@Html.ValidationMessageFor(bp => bp.Content, "This field is required.")
+

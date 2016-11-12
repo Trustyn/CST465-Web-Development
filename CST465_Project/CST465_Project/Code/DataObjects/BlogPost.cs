@@ -4,35 +4,19 @@ namespace CST465_Project
 {
     public class BlogPost : IDataEntity
     {
-        public int ID
-        {
-            get{ return ID; }
-            set{ ID = value; }
-        }
+        private int _id;
+        private string _author, _content, _title;
+        private DateTime _timestamp;
 
-        public string Author
-        {
-            get { return Author; }
-            set { Author = value; }
-        }
+        public int ID { get; set; }
 
-        public string Title
-        {
-            get { return Title; }
-            set { Title = value; }
-        }
+        public string Author { get; set; }
 
-        public string Content
-        {
-            get { return Content; }
-            set { Content = value; }
-        }
+        public string Title { get; set; }
 
-        public DateTime Timestamp
-        {
-            get { return Timestamp; }
-            set { Timestamp = value; }
-        }
+        public string Content { get; set; }
+
+        public DateTime Timestamp { get; set; }
     }
 
 }

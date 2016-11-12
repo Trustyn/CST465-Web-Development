@@ -1,0 +1,12 @@
+﻿@model BlogPost
+@{Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Blog Post";}
+
+@section header{}
+@section h1 {<h1>Show Blog Post</h1>}
+
+@section h2 {
+    @Html.DisplayForModel()
+}
+
+@section footer{}

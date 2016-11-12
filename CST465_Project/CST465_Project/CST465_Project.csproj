@@ -122,6 +122,10 @@
     <Content Include="Views\Blog\Add.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\Edit.cshtml" />
+    <Content Include="Views\Blog\Show.cshtml" />
+    <Content Include="Views\Blog\DisplayTemplates\BlogPost.cshtml" />
+    <Content Include="Views\Blog\EditorTemplates\BlogPostModel.cshtml" />
+    <Content Include="Views\Shared\_BlogPostLinkList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -163,6 +167,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Blog\BlogPostModel.cs" />
+    <Compile Include="Models\TestQuestions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForms\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

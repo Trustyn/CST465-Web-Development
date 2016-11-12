@@ -13,7 +13,7 @@ namespace CST465_Project
         
         public BlogController()
         {
-            BlogDBRepository _Repo = new BlogDBRepository();
+            _Repo = new BlogDBRepository();
         }
 
         public ActionResult Index()
@@ -33,7 +33,12 @@ namespace CST465_Project
         {
             if(ModelState.IsValid)
             {
-                
+                BlogPost b = new BlogPost();
+                b.ID = model.ID;
+                b.Title = model.Title;
+                b.Author = model.Author;
+                b.Content = model.Content;
+                _Repo.Save(b);
             }
             else
             {
@@ -62,6 +67,11 @@ namespace CST465_Project
                 _Repo.Save(bp);
             }
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Show(int id)
+        {
+            return View(_Repo.Get(id));
         }
     }
 }

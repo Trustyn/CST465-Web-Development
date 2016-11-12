@@ -17,7 +17,6 @@ C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_P
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\obj\Debug\CST465_Project.dll
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\obj\Debug\CST465_Project.pdb
-C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\obj\Debug\CST465_Project.csprojResolveAssemblyReference.cache
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Antlr3.Runtime.dll
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Newtonsoft.Json.dll
@@ -38,3 +37,4 @@ C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_P
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\System.Web.WebPages.xml
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\System.Web.WebPages.Razor.xml
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\obj\Debug\CST465_Project.csprojResolveAssemblyReference.cache
