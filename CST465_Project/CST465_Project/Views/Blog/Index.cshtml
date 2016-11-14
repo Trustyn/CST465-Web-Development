@@ -1,17 +1,18 @@
 ﻿@model List<BlogPost>
-@{ 
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = "Blog Post List";
-}
+@{Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Blog Post List";}
 @section header{}
 @section h1 {Blog Post List}
 
-@foreach(BlogPost bp in Model)
-{
-    <div>
-        @section h2 {bp.Title}
-        @Html.ActionLink("Edit Post", "Edit", new { ID = bp.ID })
-    </div>
-}
-@Html.ActionLink("Add Post", "Add")
+
+@section h4{
+    @Html.ActionLink("Add Post", "Add")
+    @foreach (BlogPost bp in Model)
+    {
+        <div>
+            @Html.DisplayFor(Modelbp => bp.Title)<br />
+            @Html.ActionLink("Show Post", "Show", new { ID = bp.ID })
+            @Html.ActionLink("Edit Post", "Edit", new { ID = bp.ID })<br /><br />
+        </div>
+    }}
 @section footer{}

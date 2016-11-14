@@ -1,16 +1,12 @@
 ﻿/* Background: http://paletton.com/#uid=10q0u0kgf8q9si59t9Ql86MqA4D */
 /* Text: http://paletton.com/#uid=12Y0u0krhGUgyPym9KGBEDSCpqn */
 /* Nav: http://paletton.com/#uid=1000u0k004h0jin01bN5m02dm0p */
-html {
-    background-color: #362112;
-    /*This only here for A4, will remove because ugly.*/
-}
 
 body {
     background-color: #432F21;
     color: #1FD26A;
     margin: auto;
-    max-width: 98%;
+    max-width: 99%;
 }
 
 img {
@@ -30,6 +26,10 @@ h2 {
 
 h3 {
     color: #1FD267;
+}
+
+h4 {
+    color: #00973D;
 }
 
 ul  {

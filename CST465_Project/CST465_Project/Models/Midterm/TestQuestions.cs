@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CST465_MVC_Samples
+namespace CST465_Project
 {
     public class TestQuestion
     {

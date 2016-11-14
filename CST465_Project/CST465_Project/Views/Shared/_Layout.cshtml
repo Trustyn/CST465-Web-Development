@@ -16,11 +16,13 @@
             <li>@Html.ActionLink("Contact", "/Index", "Contact")</li>
             <li>@Html.ActionLink("About", "/Index", "About")</li>
             <li>@Html.ActionLink("BlogPost", "/Index", "Blog")</li>
+            <li>@Html.ActionLink("Midterm", "/Index", "Midterm")</li>
         </ul>
     </nav>
     <h1>@RenderSection("h1", required: false)</h1>
     <h2>@RenderSection("h2", required: false)</h2>
     <h3>@RenderSection("h3", required: false)</h3>
+    <h3>@RenderSection("h4", required: false)</h3>
     <footer>
         @RenderSection("footer", required: false)
     </footer>

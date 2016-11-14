@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<BlogPost>
 
-
+@Html.ActionLink("Add Post", "Add")
 @foreach (BlogPost bp in Model)
 {
     string b = string.Format("{0} -{1}", bp.Title, bp.Timestamp);
@@ -8,4 +8,3 @@
         @Html.ActionLink(b , "Show", new { ID = bp.ID })
     </div>
 }
-@Html.ActionLink("Add Post", "Add")

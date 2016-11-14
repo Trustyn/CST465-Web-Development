@@ -1,12 +1,13 @@
 ﻿@model BlogPostModel
 @{Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Edit a Blog Post";}
-
-
+@section header{}
 @section h1{Edit a Blog Post}
 
-@using (Html.BeginForm())
-{
-    @Html.EditorForModel()
-    <button type="submit">Submit</button>
-}
+@section h3{
+    @using (Html.BeginForm())
+    {
+        @Html.EditorForModel()
+        <button type="submit">Submit</button>
+    }}
+@section footer{}
