@@ -1,10 +1,16 @@
-﻿@model TestQuestion
+﻿@model List<TestQuestion>
 @{Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Test Results";}
 @section header{}
 @section h1{Test Results}
 
-
+@foreach (TestQuestion s in Model)
+{
+    <div>
+        <h2>@s.Question</h2>
+        @s.Answer
+    </div>
+}
 
 
 @section footer{}

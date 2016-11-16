@@ -83,7 +83,6 @@ namespace CST465_Project
         public ActionResult DisplayResults()
         {
             List<TestQuestion> questions = (List<TestQuestion>)TempData["TestData"];
-            TempData["TestData"] = questions;
             return View(questions);
         }
     }

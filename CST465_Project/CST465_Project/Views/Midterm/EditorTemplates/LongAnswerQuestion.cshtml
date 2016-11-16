@@ -1,7 +1,7 @@
 ﻿@model LongAnswerQuestion
 
 @Html.HiddenFor(lambda => lambda.ID)
-<h2>@Model.Question</h2>
+<h2>@Html.Raw(Model.Question)</h2>
 <div>
     @Html.TextAreaFor(lambda => lambda.Answer)
     @Html.ValidationMessageFor(lambda => lambda.Answer)
