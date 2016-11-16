@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Collections;
-using System.Web.Mvc;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace CST465_Project
 {
     public class MultipleChoiceQuestion : TestQuestion
     {
-        private List<string> _answer;
 
         [Required]
         public override string Answer { get; set; }
+  
+        public List<string> Choices { get; set; }
     }
 }

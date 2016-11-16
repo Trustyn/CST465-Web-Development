@@ -4,10 +4,10 @@
 @section header{}
 @section h1{Edit a Blog Post}
 
-@section h3{
-    @using (Html.BeginForm())
-    {
-        @Html.EditorForModel()
-        <button type="submit">Submit</button>
-    }}
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <button type="submit">Submit</button>
+}
 @section footer{}

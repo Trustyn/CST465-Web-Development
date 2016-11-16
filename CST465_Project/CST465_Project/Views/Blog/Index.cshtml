@@ -5,14 +5,14 @@
 @section h1 {Blog Post List}
 
 
-@section h4{
-    @Html.ActionLink("Add Post", "Add")
-    @foreach (BlogPost bp in Model)
-    {
-        <div>
-            @Html.DisplayFor(Modelbp => bp.Title)<br />
-            @Html.ActionLink("Show Post", "Show", new { ID = bp.ID })
-            @Html.ActionLink("Edit Post", "Edit", new { ID = bp.ID })<br /><br />
-        </div>
-    }}
+
+@Html.ActionLink("Add Post", "Add")
+@foreach (BlogPost bp in Model)
+{
+    <div>
+        @Html.DisplayFor(lambda => bp.Title)<br />
+        @Html.ActionLink("Show Post", "Show", new { ID = bp.ID })
+        @Html.ActionLink("Edit Post", "Edit", new { ID = bp.ID })<br /><br />
+    </div>
+}
 @section footer{}

@@ -1,13 +1,12 @@
-﻿@model TestQuestion
+﻿@model List<TestQuestion>
 @{Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Take Test";}
 @section header{}
 @section h1{Take Test}
 
-@section h3{
-    @using (Html.BeginForm())
-    {
-        @Html.EditorForModel()
-        <button type="submit">Submit</button>
-    }}
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <button type="submit">Submit</button>
+}
 @section footer{}

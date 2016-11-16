@@ -56,3 +56,26 @@ li a:hover {
     background-color: #333333;
     color: #1FD26A;
 }
+
+div TextArea {
+    width: 40%;
+    height: 150px;
+    background-color: #222222;
+    color: #1FD26A;
+
+}
+
+div input {
+    background-color: #222222;
+    color: #1FD26A;
+}
+
+div select {
+    background-color: #222222;
+    color: #1FD26A;
+}
+
+button {
+    background-color: #222222;
+    color: #1FD26A;
+}

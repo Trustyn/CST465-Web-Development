@@ -1,26 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+using System.Web.Mvc;
 
 namespace CST465_Project
 {
     public class TrueFalseQuestion : TestQuestion
     {
-        private string _answer;
+        [Required]
+        [RegularExpression("True|False")]
+        public override string Answer { get; set; }
 
-        //[Required]
-        //public override string Answer
-        //{
-        //    get
-        //    {
-        //        return _answer;
-        //    }
-        //    set
-        //    {
-        //        if(value.)
-        //    }
-        //}
+        public List<SelectListItem> Choices
+        {
+            get
+            {
+                return new List<SelectListItem>
+                {
+                    new SelectListItem() { Text = "True", Value = "True" },
+                    new SelectListItem() { Text = "False", Value = "False" }
+                };
+            }
+        }
     }
 }

@@ -9,22 +9,23 @@
         @RenderSection("header", required: false)
     </header>
     <img src="~/Images/VascularLogo_GreenSAFS.png" alt="MainLogo" />
-    @RenderBody()
     <nav>
         <ul>
             <li>@Html.ActionLink("Home", "/Index", "Home")</li>
             <li>@Html.ActionLink("Contact", "/Index", "Contact")</li>
             <li>@Html.ActionLink("About", "/Index", "About")</li>
             <li>@Html.ActionLink("BlogPost", "/Index", "Blog")</li>
-            <li>@Html.ActionLink("Midterm", "/Index", "Midterm")</li>
+            <li>@Html.ActionLink("Midterm", "/TakeTest", "Midterm")</li>
         </ul>
     </nav>
     <h1>@RenderSection("h1", required: false)</h1>
-    <h2>@RenderSection("h2", required: false)</h2>
-    <h3>@RenderSection("h3", required: false)</h3>
-    <h3>@RenderSection("h4", required: false)</h3>
+    @RenderBody()
     <footer>
         @RenderSection("footer", required: false)
     </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

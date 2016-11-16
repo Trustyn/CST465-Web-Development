@@ -1,0 +1,8 @@
+﻿@model TrueFalseQuestion
+
+@Html.HiddenFor(lambda => lambda.ID)
+<h2>@Model.Question</h2>
+<div>
+    @Html.DropDownListFor(lambda => lambda.Answer, Model.Choices)
+    @Html.ValidationMessageFor(lambda => lambda.Answer)
+</div>

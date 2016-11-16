@@ -128,10 +128,11 @@
     <Content Include="Views\Shared\_BlogPostLinkList.cshtml" />
     <Content Include="Views\Midterm\TakeTest.cshtml" />
     <Content Include="Views\Midterm\DisplayResults.cshtml" />
-    <Content Include="Views\Midterm\TrueFalseQuestion.cshtml" />
-    <Content Include="Views\Midterm\ShortAnswerQuestion.cshtml" />
-    <Content Include="Views\Midterm\LongAnswerQuestion.cshtml" />
-    <Content Include="Views\Midterm\MultipleChoiceQuestion.cshtml" />
+    <Content Include="Views\Midterm\EditorTemplates\TrueFalseQuestion.cshtml" />
+    <Content Include="Views\Midterm\EditorTemplates\ShortAnswerQuestion.cshtml" />
+    <Content Include="Views\Midterm\EditorTemplates\LongAnswerQuestion.cshtml" />
+    <Content Include="Views\Midterm\EditorTemplates\MultipleChoiceQuestion.cshtml" />
+    <Content Include="JSON\Midterm.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

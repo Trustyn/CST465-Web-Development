@@ -1,0 +1,13 @@
+﻿@model MultipleChoiceQuestion
+
+@Html.HiddenFor(lambda => lambda.ID)
+<h2>@Model.Question</h2>
+<div>
+    @foreach (string s in Model.Choices)
+    {
+        @Html.RadioButtonFor(lambda => lambda.Answer, s)
+        @Html.LabelForModel(s)
+        <br />
+    }
+    @Html.ValidationMessageFor(lambda => lambda.Answer)
+</div>
