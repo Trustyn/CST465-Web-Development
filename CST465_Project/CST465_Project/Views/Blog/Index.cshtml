@@ -7,6 +7,11 @@
 
 
 @Html.ActionLink("Add Post", "Add")
+@using (Html.BeginForm())
+{
+    @Html.TextBox("filter", "");
+    <button type="submit">Submit</button>
+}
 @foreach (BlogPost bp in Model)
 {
     <div>

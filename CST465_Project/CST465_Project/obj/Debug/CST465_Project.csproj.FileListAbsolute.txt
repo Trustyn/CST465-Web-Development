@@ -38,3 +38,13 @@ C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_P
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\System.Web.WebPages.Razor.xml
 C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\obj\Debug\CST465_Project.csprojResolveAssemblyReference.cache
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.Unity.dll
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Unity.Mvc5.dll
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.Unity.xml
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Trustyn\Documents\GitHub\CST465-Web-Development\CST465_Project\CST465_Project\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml

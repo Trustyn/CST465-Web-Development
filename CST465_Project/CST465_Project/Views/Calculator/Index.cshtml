@@ -1,0 +1,97 @@
+﻿
+@{Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Calculator";}
+@section header{}
+@section h1{Calculator}
+
+<div id="calculator">
+    <input type="text" id="uxCalcValue" class="inputDisplay" />
+    <br />
+    <button type="button" class="number">1</button>
+    <button type="button" class="number">2</button>
+    <button type="button" class="number">3</button>
+    &nbsp;
+    <button type="button" class="operator">+</button>
+    <button type="button" id="sinOperation" class="adv">sin(x)</button>
+    <br />
+    <button type="button" class="number">4</button>
+    <button type="button" class="number">5</button>
+    <button type="button" class="number">6</button>
+    &nbsp;
+    <button type="button" class="operator">-</button>
+    <button type="button" id="cosOperation" class="adv">cos(x)</button>
+    <br />
+    <button type="button" class="number">7</button>
+    <button type="button" class="number">8</button>
+    <button type="button" class="number">9</button>
+    &nbsp;
+    <button type="button" class="operator">*</button>
+    <button type="button" id="tanOperation" class="adv">tan(x)</button>
+    <br />
+    <button type="button" class="number">0</button>
+    <button type="button" class="number">.</button>
+    <button type="button" class="clear">C</button>
+    &nbsp;
+    <button type="button" class="operator">/</button>
+    <button type="button" id="sqrtOperation" class="adv">sqrt(x)</button>
+    <br />
+    <button onclick="computeValue();" type="button" id="compute">=</button>
+    &nbsp;
+    <button type="button" class="operator">%</button>
+    <br />
+    <button id="basicMode" class="button">Basic</button>
+    <button id="advancedMode" class="button">Advanced</button>
+</div>
+
+<!--SIN,COS,TAN all in RADIANS-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        setupCalculator();
+    });
+    var sum = 0;
+    function setupCalculator() {
+        $('#compute').click(computeValue);
+        $(".number").click(numberClicked);
+        $(".operator").click(numberClicked);
+        $("#sinOperation").click(function () {
+            var textBox = $('#uxCalcValue');
+            textBox.val( Math.sin(eval(textBox.val())) );
+            $('#uxCalcValue').focus();
+        });
+        $("#cosOperation").click(function () {
+            var textBox = $('#uxCalcValue');
+            textBox.val(Math.cos(eval(textBox.val())));
+            $('#uxCalcValue').focus();
+        });
+        $("#tanOperation").click(function () {
+            var textBox = $('#uxCalcValue');
+            textBox.val(Math.tan(eval(textBox.val())));
+            $('#uxCalcValue').focus();
+        });
+        $("#sqrtOperation").click(function () {
+            var textBox = $('#uxCalcValue');
+            textBox.val(Math.sqrt(eval(textBox.val())));
+            $('#uxCalcValue').focus();
+        });
+        $('#uxCalcValue').focus();
+        $('.clear').click(function () {
+            $('#uxCalcValue').val("");
+        });
+    }
+    function numberClicked() {
+        var textBox = $('#uxCalcValue');
+        textBox.val(textBox.val() + this.innerHTML);
+        $('#uxCalcValue').focus();
+    }
+
+    function computeValue() {
+        var textBox = $('#uxCalcValue');
+        textBox.val(eval(textBox.val()));
+        $('#uxCalcValue').focus();
+    }
+
+
+
+
+</script>
+@section footer{}

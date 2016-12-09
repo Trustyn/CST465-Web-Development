@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CST465_Project.ExtensionMethods;
 
 namespace CST465_Project
 {
@@ -11,9 +12,9 @@ namespace CST465_Project
     {
         private IDataEntityRepository<BlogPost> _Repo;
         
-        public BlogController()
+        public BlogController(IDataEntityRepository<BlogPost> repo)
         {
-            _Repo = new BlogDBRepository();
+            _Repo = repo;
         }
 
         public ActionResult Index()
@@ -21,7 +22,13 @@ namespace CST465_Project
             List<BlogPost> posts = _Repo.GetList();
             return View(posts);
         }
-        
+
+        [HttpPost]
+        public ActionResult Index(string filter)
+        {
+            return View(_Repo.GetListByContent(filter));
+        }
+
         public ActionResult Add()
         {
             BlogPostModel model = new BlogPostModel();
@@ -47,8 +54,7 @@ namespace CST465_Project
 
             return RedirectToAction("Index");
         }
-
-        
+    
         public ActionResult Edit(int id)
         {
             
@@ -65,8 +71,13 @@ namespace CST465_Project
                 bp.Content = model.Content;
                 bp.Author = model.Author;
                 _Repo.Save(bp);
+                return RedirectToAction("Index");
+            }else
+            {
+                return View(model);
             }
-            return RedirectToAction("Index");
+
+          
         }
 
         public ActionResult Show(int id)

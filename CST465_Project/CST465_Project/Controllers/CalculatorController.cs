@@ -6,11 +6,13 @@ using System.Web.Mvc;
 
 namespace CST465_Project
 {
-    public class AboutController : Controller
+    public class CalculatorController : Controller
     {
-        // GET: About
+        
+        // GET: Calculator
         public ActionResult Index()
         {
+            //Calc c = new Calc();
             return View();
         }
     }
